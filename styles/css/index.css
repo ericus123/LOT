@@ -71,3 +71,209 @@
   height: 7vh;
   width: 150px;
 }
+.home_card .get_hired_btn:hover {
+  background-color: #1769ff;
+  transition: 0.2s ease-in-out;
+}
+
+.our_numbers {
+  background: #1b27af;
+  width: auto;
+  height: auto;
+  margin: 4rem;
+}
+
+.our_numbers_title {
+  color: #00ffeb;
+  padding-top: 4.5rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.our_numbers_text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.select-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.select-div .select-component {
+  height: 7vh;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
+  width: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.numbers_statistics {
+  margin-top: 4rem;
+}
+
+.numbers_stats {
+  margin: 3rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 6rem;
+}
+.numbers_stats .numbers {
+  color: #00ffeb;
+  font-weight: 200;
+  font-size: 40px;
+}
+.numbers_stats .numbers_title {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+.numbers_stats .numbers_text {
+  color: #d7d7e2;
+  width: 90%;
+  margin: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: #1769ff;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: #1769ff;
+}
+
+.about_us {
+  font-family: "Poppins", sans-serif;
+  background: #f6f6ff;
+  padding: 6rem;
+}
+.about_us .row_about_us {
+  padding-top: 6rem;
+}
+.about_us .twitter_icon {
+  color: #1769ff;
+  font-size: 1px;
+  height: 28px;
+  width: 28px;
+}
+.about_us .carousel_about_name {
+  font-weight: bold;
+  font-size: 16px;
+}
+.about_us .carousel_about_email {
+  font-weight: bold;
+  color: #1769ff;
+  font-size: 16px;
+}
+.about_us .youtube_image {
+  width: 500px;
+  height: 300px;
+}
+
+.location {
+  width: 100%;
+}
+
+.footer {
+  height: 300px;
+  background-color: #1b27af;
+}
+
+.footer {
+  padding: 6rem;
+  padding-right: 6rem;
+}
+
+.footer_title {
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.footer_location,
+.footer_street_nbr,
+.footer_contacts_email,
+.footer_contacts_phone_nbr {
+  color: #ececec;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.social_icon {
+  color: white;
+  background-color: #1769ff;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+}
+
+.footer_form {
+  position: absolute;
+  background-color: white;
+  height: auto;
+  padding: 5%;
+  margin-top: -300px;
+  right: 0;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.contact_form_title {
+  color: #00ffeb;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.form_input {
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: none;
+}
+
+.companies {
+  background-color: #f6f6ff;
+  padding: 6rem;
+}
+.companies .row .col img {
+  width: 200px;
+  height: 170px;
+}
+
+.partners {
+  padding: 4rem;
+}
+.partners .row {
+  width: auto;
+}
+
+.form_btn {
+  float: right;
+  background-color: #1769ff;
+  padding: 10px;
+  border: none;
+  color: white;
+  margin: 2rem;
+}
