@@ -1,0 +1,14 @@
+@import url("../sass/variables.scss");
+.main-logo {
+  width: 50px;
+}
+.contact_btn {
+  text-align: left;
+  font: normal normal normal 14px/21px Poppins;
+  letter-spacing: 0px;
+  color: #00ffeb;
+  text-transform: uppercase;
+  background-color: blue;
+  opacity: 1;
+  border: none;
+}
