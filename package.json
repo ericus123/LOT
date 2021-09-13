@@ -1,0 +1,13 @@
+{
+  "name": "TASKFORCE_LOT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ericus123/TASKFORCE_LOT.git",
+  "author": "AMANI Eric <amaniericus@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.39.2"
+  }
+}
