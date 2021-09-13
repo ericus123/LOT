@@ -71,3 +71,68 @@
   height: 7vh;
   width: 150px;
 }
+
+.our_numbers {
+  background: #1b27af;
+  width: auto;
+  height: auto;
+  margin: 4rem;
+}
+
+.our_numbers_title {
+  color: #00ffeb;
+  padding-top: 4.5rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.our_numbers_text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.select-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.select-div .select-component {
+  height: 7vh;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
+  width: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.numbers_statistics {
+  margin-top: 4rem;
+}
+
+.numbers_stats {
+  margin: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+.numbers_stats .numbers {
+  color: #00ffeb;
+  font-weight: 200;
+  font-size: 40px;
+}
+.numbers_stats .numbers_title {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+.numbers_stats .numbers_text {
+  color: #d7d7e2;
+  width: 90%;
+  margin: auto;
+  font-size: 15px;
+}

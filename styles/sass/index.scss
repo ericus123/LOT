@@ -68,3 +68,64 @@
   filter: brightness(100%) !important;
   width: 70%;
 }
+.our_numbers {
+  background: $blue_background;
+  width: auto;
+  height: auto;
+  margin: $margin_4;
+}
+.our_numbers_title {
+  color: $cyan_color;
+  padding-top: 4.5rem;
+  font-weight: bold;
+  font-family: $poppins;
+}
+.our_numbers_text {
+  color: white;
+  font-family: $poppins;
+  width: 50%;
+  margin: auto;
+  margin-top: $margin_2;
+}
+.select-div {
+  .select-component {
+    height: 7vh;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: $poppins;
+    border-radius: 6px;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: $margin_4;
+}
+
+.numbers_statistics {
+  margin-top: $margin_4;
+}
+.numbers_stats {
+  margin: $margin_3;
+  font-family: $poppins;
+  .numbers {
+    color: $cyan_color;
+    font-weight: 200;
+    font-size: 40px;
+  }
+  .numbers_title {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .numbers_text {
+    color: #d7d7e2;
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+  }
+}
