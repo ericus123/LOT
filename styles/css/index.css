@@ -296,7 +296,7 @@
   padding: 4rem;
 }
 .partners .row {
-  width: auto;
+  overflow-x: auto;
 }
 
 .partners_name {
