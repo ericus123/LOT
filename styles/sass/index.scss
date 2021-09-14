@@ -7,10 +7,18 @@
 .homepage {
   max-width: 100%;
   min-height: 100vh;
-  background: url("../../assets//images/home_img.png");
+}
+.homepage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets//images/home_img.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  //filter: brightness(50%);
+  filter: brightness(50%);
 }
 .contact_navbar_btn {
   color: $cyan_color;
@@ -192,12 +200,15 @@
 .footer {
   padding: $margin_6;
   padding-right: $margin_6;
+  .row {
+    max-width: 80%;
+  }
 }
 .footer_title {
   color: white;
   font-weight: bold;
   font-family: $poppins;
-  font-size: 20px;
+  font-size: 16px;
 }
 .footer_location,
 .footer_street_nbr,
@@ -205,7 +216,7 @@
 .footer_contacts_phone_nbr {
   color: #ececec;
   font-family: $poppins;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
 }
 
@@ -217,26 +228,45 @@
   width: 24px;
   padding: 5px;
 }
-.footer_form {
-  position: absolute;
-  background-color: white;
-  height: auto;
-  padding: 5%;
-  margin-top: -300px;
-  right: 0;
-  margin-right: $margin_4;
-  margin-bottom: $margin_2;
-}
+//contact-form
+
 .contact_form_title {
-  color: $cyan_color;
+  color: $main_blue;
   font-family: $poppins;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 24px;
+  text-align: left;
 }
 .form_input {
   border: none;
   border-bottom: 1px solid black;
   border-radius: none;
+  padding: 0%;
+  font-size: 14px;
+}
+.footer_form {
+  position: absolute;
+  background-color: white;
+  width: 25%;
+  height: auto;
+  margin-top: -400px;
+  right: 0;
+  margin-right: $margin_4;
+  margin-bottom: $margin_2;
+
+  .form-group {
+    padding: 5%;
+    margin: 0%;
+  }
+}
+.form_btn {
+  float: right;
+  background-color: $main_blue;
+  padding: 10px;
+  border: none;
+  color: white;
+  margin: $margin_2;
+  margin-bottom: $margin_4;
 }
 
 //companies
@@ -258,16 +288,50 @@
 
 .partners {
   .row {
-    width: auto;
+    overflow-x: auto;
   }
 
   padding: $margin_4;
 }
-.form_btn {
-  float: right;
+
+.partners_name {
+  color: $cyan_color;
+  font-size: 18px;
+  font-family: $poppins;
+  font-weight: bold;
+}
+.partners_company {
+  color: #707070;
+  font-size: 14px;
+  font-family: $poppins;
+  text-align: left;
+  font-weight: normal;
+}
+.partners_text {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: left;
+}
+.next_btn {
+  height: 5vh;
   background-color: $main_blue;
-  padding: 10px;
+  width: 10vh;
+  height: 10vh;
   border: none;
-  color: white;
-  margin: $margin_2;
+  border-radius: 6px;
+  position: absolute;
+  right: 0;
+  margin-right: $margin_4;
+  margin-top: 12.5%;
+  margin-bottom: 12.5%;
+}
+.next_icon {
+  height: 24px;
+  width: 24px;
+  font-weight: bold;
+}
+.read_more_btn {
+  color: black;
+  font-weight: bold;
+  font-family: $poppins;
 }
