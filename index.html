@@ -10,14 +10,22 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="./styles/css/index.css" />
+    <link rel="stylesheet" href="./styles/css/responsive.css" />
     <title>LOT</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg transparent">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#"
-          ><img src="../assets/images/logo.png" class="main-logo" alt=""
+          ><img
+            src="../assets/images/logo.png"
+            class="main-logo"
+            alt="logo image"
         /></a>
         <button
           class="navbar-toggler"
@@ -30,6 +38,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active p-2">
@@ -44,10 +53,10 @@
               <a class="nav-link nav_gray" href="#">Companies</a>
             </li>
             <li class="nav-item p-2">
-              <a class="nav-link nav_gray" href="#">About us</a>
+              <a class="nav-link nav_gray" href="/about.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#footer"
                 ><button class="contact_navbar_btn p-2">CONTACT US</button></a
               >
             </li>
@@ -55,6 +64,9 @@
         </div>
       </div>
     </nav>
+    <video class="home_video" autoplay muted loop id="myVideo">
+      <source src="./assets//videos/video.mp4" type="video/mp4" />
+    </video>
     <div class="homepage row h-100 justify-content-center align-items-center">
       <div class="home_card text-center">
         <div>
@@ -65,70 +77,56 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="#" class="card-link"
-            ><button class="hire_btn text-center btn" type="button">
-              HIRE
-            </button></a
-          >
-          <a href="#" class="card-link"
-            ><button class="get_hired_btn text-center btn" type="button">
+          <div class="home_btns">
+            <button class="hire_btn text-center btn" type="button">HIRE</button>
+
+            <button class="get_hired_btn text-center btn" type="button">
               GET HIRED
-            </button></a
-          >
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="upper_sliders">
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 25rem">
-            <img
-              class="card-img-top"
-              src="./assets/images/slide1.png"
-              alt="Card image cap"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 25rem">
-            <img
-              class="card-img-top"
-              src="./assets//images/slide2.png"
-              alt="Card image cap"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 25rem">
-            <img
-              class="card-img-top"
-              src="./assets//images//slide3.png"
-              alt="Card image cap"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 25rem">
-            <img
-              class="card-img-top"
-              src="./assets//images//slide4.png"
-              alt="Card image cap"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 25rem">
-            <img
-              class="card-img-top"
-              src="./assets//images//slide5.png"
-              alt="Card image cap"
-            />
-          </div>
-        </div>
+    <div class="carousel images_slider" data-flickity='{ "groupCells": true }'>
+      <div class="carousel-cell">
+        <img
+          class="card-img-top"
+          src="./assets/images/slide1.png"
+          alt="Card image cap"
+        />
+      </div>
+      <div class="carousel-cell">
+        <img
+          class="card-img-top"
+          src="./assets/images/slide2.png"
+          alt="Card image cap"
+        />
+      </div>
+      <div class="carousel-cell">
+        <img
+          class="card-img-top"
+          src="./assets/images/slide3.png"
+          alt="Card image cap"
+        />
+      </div>
+      <div class="carousel-cell">
+        <img
+          class="card-img-top"
+          src="./assets/images/slide4.png"
+          alt="Card image cap"
+        />
+      </div>
+      <div class="carousel-cell">
+        <img
+          class="card-img-top"
+          src="./assets/images/slide5.png"
+          alt="Card image cap"
+        />
       </div>
     </div>
-    <div class="our_numbers">
+
+    <div class="our_numbers small_margin">
       <h1 class="our_numbers_title text-center">Our Numbers</h1>
       <p class="our_numbers_text text-center">
         Brand Africa as an origin of sustainable items Brand Africa as an origin
@@ -171,9 +169,9 @@
         </div>
       </div>
     </div>
-    <div class="about_us">
+    <div class="about_us small_padding">
       <div class="row row_about_us">
-        <div class="col">
+        <div class="col-sm">
           <h1 class="about_us_title">What they say about us</h1>
           <div
             id="carouselExampleIndicators"
@@ -265,107 +263,146 @@
             </a>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm">
           <iframe
-            width="500"
-            height="315"
-            src="https://www.youtube.com/embed/C5i-UnuUKUI"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+            class="youtube_video"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          >
+          </iframe>
         </div>
       </div>
     </div>
 
-    <div class="partners">
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 30rem">
-            <img
-              src="./assets/images/home_img.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                <h1 class="partners_name">Ishimwe Paradis</h1>
-                <h3 class="partners_company">Awesomity ltd</h3>
-              </h5>
-              <p class="partners_text">
-                Brand Africa as an origin of sustainable items Brand Africa as
-                an origin of sustainable items Brand Africa as an origin of
-                sustainable items... <a class="read_more_btn">Read more</a>
-              </p>
-            </div>
-          </div>
+    <div class="carousel partners" data-flickity='{ "groupCells": true }'>
+      <div class="carousel-cell card">
+        <img
+          src="./assets/images/home_img.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            <h1 class="partners_name">Ishimwe Paradis</h1>
+            <h3 class="partners_company">Awesomity ltd</h3>
+          </h5>
+          <p class="partners_text">
+            Brand Africa as an origin of sustainable items Brand Africa as an
+            origin of sustainable items Brand Africa as an origin of sustainable
+            items... <a class="read_more_btn">Read more</a>
+          </p>
         </div>
-
-        <div class="col">
-          <div class="card" style="width: 30rem">
-            <img
-              src="./assets/images/home_img.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                <h1 class="partners_name">Ishimwe Paradis</h1>
-                <h3 class="partners_company">Awesomity ltd</h3>
-              </h5>
-              <p class="partners_text">
-                Brand Africa as an origin of sustainable items Brand Africa as
-                an origin of sustainable items Brand Africa as an origin of
-                sustainable items... <a class="read_more_btn">Read more</a>
-              </p>
-            </div>
-          </div>
+      </div>
+      <div class="carousel-cell card">
+        <img
+          src="./assets/images/home_img.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            <h1 class="partners_name">Ishimwe Paradis</h1>
+            <h3 class="partners_company">Awesomity ltd</h3>
+          </h5>
+          <p class="partners_text">
+            Brand Africa as an origin of sustainable items Brand Africa as an
+            origin of sustainable items Brand Africa as an origin of sustainable
+            items... <a class="read_more_btn">Read more</a>
+          </p>
         </div>
-        <div class="col">
-          <div class="card" style="width: 25rem">
-            <img
-              src="./assets/images/home_img.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                <h1 class="partners_name">Ishimwe Paradis</h1>
-                <h3 class="partners_company">Awesomity ltd</h3>
-              </h5>
-              <p class="partners_text">
-                Brand Africa as an origin of sustainable items Brand Africa as
-                an origin of sustainable items Brand Africa as an origin of
-                sustainable items... <a class="read_more_btn">Read more</a>
-              </p>
-            </div>
-          </div>
+      </div>
+      <div class="carousel-cell card">
+        <img
+          src="./assets/images/home_img.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            <h1 class="partners_name">Ishimwe Paradis</h1>
+            <h3 class="partners_company">Awesomity ltd</h3>
+          </h5>
+          <p class="partners_text">
+            Brand Africa as an origin of sustainable items Brand Africa as an
+            origin of sustainable items Brand Africa as an origin of sustainable
+            items... <a class="read_more_btn">Read more</a>
+          </p>
         </div>
-        <button class="next_btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#00FFEB"
-            class="bi bi-chevron-right next_icon"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-            />
-          </svg>
-        </button>
+      </div>
+      <div class="carousel-cell card">
+        <img
+          src="./assets/images/home_img.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            <h1 class="partners_name">Ishimwe Paradis</h1>
+            <h3 class="partners_company">Awesomity ltd</h3>
+          </h5>
+          <p class="partners_text">
+            Brand Africa as an origin of sustainable items Brand Africa as an
+            origin of sustainable items Brand Africa as an origin of sustainable
+            items... <a class="read_more_btn">Read more</a>
+          </p>
+        </div>
       </div>
     </div>
 
     <div class="companies">
       <div class="row">
-        <div class="col"><img src="./assets/images/ict.png" alt="" /></div>
-        <div class="col"><img src="./assets/images/fintech.png" alt="" /></div>
-        <div class="col"><img src="./assets/images/ict.png" alt="" /></div>
-        <div class="col"><img src="./assets/images/fintech.png" alt="" /></div>
+        <div class="col d-flex justify-content-center">
+          <img src="./assets/images/ict.png" alt="" />
+        </div>
+        <div class="col d-flex justify-content-center">
+          <img src="./assets/images/fintech.png" alt="" />
+        </div>
+        <div class="col d-flex justify-content-center">
+          <img src="./assets/images/ict.png" alt="" />
+        </div>
+        <div class="col d-flex justify-content-center">
+          <img src="./assets/images/fintech.png" alt="" />
+        </div>
       </div>
     </div>
+    <form class="footer_form_small">
+      <br />
+      <h1 class="contact_form_title mt-4 ml-4">Contact us</h1>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control form_input"
+          id="formGroupExampleInput"
+          placeholder="Names"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control form_input"
+          id="formGroupExampleInput2"
+          placeholder="Email"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control form_input"
+          id="formGroupExampleInput2"
+          placeholder="Phone Number"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control form_input"
+          id="formGroupExampleInput2"
+          placeholder="Message"
+        />
+      </div>
+      <div class="form_group">
+        <button class="form_btn">Send Message</button>
+      </div>
+    </form>
     <div class="location">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.500540270358!2d30.090942214266004!3d-1.953071798576111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6f3a6d7d373%3A0xda6c2b3cabfec246!2sKigali%20Heights!5e0!3m2!1sen!2srw!4v1631575006647!5m2!1sen!2srw"
@@ -376,20 +413,21 @@
         loading="lazy"
       ></iframe>
     </div>
-    <footer>
-      <div class="footer">
+
+    <footer id="footer">
+      <div class="footer small_padding">
         <div class="row footer_row">
-          <div class="col col-3">
+          <div class="col-sm">
             <h1 class="footer_title">OUR SERVICES</h1>
             <h3 class="footer_location">Kigali, Rwanda</h3>
             <h3 class="footer_street_nbr">KG 96 St 49</h3>
           </div>
-          <div class="col col-3">
+          <div class="col-sm">
             <h1 class="footer_title">OUR CONTACTS</h1>
             <h3 class="footer_contacts_email">KG 96 St 49</h3>
             <h3 class="footer_contacts_phone_nbr">+(250) 788383455</h3>
           </div>
-          <div class="col col-6">
+          <div class="col-sm">
             <div class="row">
               <div class="col">
                 <svg
@@ -463,6 +501,7 @@
               </div>
             </div>
           </div>
+
           <form class="footer_form">
             <br />
             <h1 class="contact_form_title mt-4 ml-4">Contact us</h1>
@@ -505,6 +544,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -520,5 +560,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script></script>
   </body>
 </html>

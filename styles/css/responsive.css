@@ -1,0 +1,133 @@
+@media only screen and (max-width: 380px) {
+  .our_numbers {
+    margin: 0px;
+  }
+
+  .about_us {
+    padding: 0px;
+  }
+  .about_us .row_about_us {
+    padding-top: 4rem;
+  }
+  .about_us .about_us_title {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 3rem;
+  }
+  .about_us .twitter_icon {
+    font-size: 1px;
+    height: 20px;
+    width: 20px;
+  }
+  .about_us .carousel_about_name {
+    font-size: 12px;
+  }
+  .about_us .carousel_about_email {
+    font-size: 12px;
+  }
+
+  .home_card {
+    width: 90%;
+  }
+  .home_card .home_title {
+    font-size: 2em;
+  }
+  .home_card .hire_btn {
+    height: 5vh;
+    width: 150px;
+  }
+  .home_card .get_hired_btn {
+    height: 5vh;
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 1024px) {
+  .about_us {
+    padding: 1rem;
+  }
+  .about_us .row_about_us {
+    padding-top: 6rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 780px) {
+  .small_padding {
+    padding: 1rem !important;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 780px) {
+  .small_padding {
+    padding: 1rem !important;
+  }
+
+  .row_about_us {
+    display: flex !important;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .small_padding {
+    padding: 1rem !important;
+  }
+
+  .small_margin {
+    margin: 1rem !important;
+  }
+
+  .no_margin {
+    padding: 0px !important;
+  }
+}
+@media only screen and (max-width: 600px) and (max-width: 768px) {
+  .carousel-cell {
+    width: 100%;
+    margin-right: 2.5%;
+  }
+
+  .flickity-prev-next-button .arrow {
+    font-size: smaller;
+  }
+
+  .flickity-prev-next-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 0%;
+    background: #1769ff;
+  }
+
+  .footer .row {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer_form {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer_form_small {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer_form_small .form-group {
+    padding: 5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .why_us_container {
+    margin: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about_container {
+    width: 100%;
+    font-size: 12px;
+    padding-bottom: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer_form_small {
+    display: none;
+  }
+}
