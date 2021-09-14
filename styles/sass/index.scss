@@ -2,6 +2,7 @@
 @import "../sass/variables.scss";
 * {
   box-sizing: border-box;
+  font-family: $poppins;
 }
 
 .homepage {
@@ -288,12 +289,17 @@
 
 .partners {
   .row {
-    overflow-x: auto;
+    min-width: 2000px;
+    overflow: hidden;
   }
+  overflow: hidden;
 
   padding: $margin_4;
 }
-
+.col {
+  padding-right: -10px;
+  padding-left: -10px;
+}
 .partners_name {
   color: $cyan_color;
   font-size: 18px;
@@ -311,6 +317,7 @@
   font-weight: normal;
   font-size: 14px;
   text-align: left;
+  font-family: $poppins;
 }
 .next_btn {
   height: 5vh;
@@ -334,4 +341,28 @@
   color: black;
   font-weight: bold;
   font-family: $poppins;
+}
+
+.carousel-item {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.about_us_title {
+  color: $main_blue;
+  font-size: 24px;
+  text-align: left;
+  margin-left: $margin_5;
+  font-weight: bold;
+  font-family: $poppins;
+}
+
+//upper image slider
+
+.upper_sliders {
+  .row {
+    width: 2300px;
+    overflow: hidden;
+    margin-top: -5%;
+  }
 }
